@@ -44,7 +44,7 @@ echo Installation of Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain stable --profile default -y
 
 echo Installation of Python
-sudo pkcon install -y python-is-python3 python3-pip
+sudo pkcon install -y python-is-python3 python3-pip python3-venv
 pip install --upgrade pip
 pip install pylint
 curl -sSL https://install.python-poetry.org | python3 -
