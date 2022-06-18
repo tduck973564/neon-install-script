@@ -56,8 +56,8 @@ sudo npm install -g typescript npm
 echo Installation of Java
 sudo pkcon install -y openjdk-17-jdk
 
-echo Installation of Clang
-sudo pkcon install -y clang-11 clang-tools-11 clangd-11
+echo Installation of Clang and CMake
+sudo pkcon install -y clang-11 clang-tools-11 clangd-11 cmake
 
 echo Installation of JetBrains
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
@@ -87,7 +87,7 @@ code --uninstall-extension ms-vscode.cpptools
 code --install-extension llvm-vs-code-extensions.vscode-clangd
 
 echo Installation of miscellaneous useful apps
-sudo pkcon install -y ffmpeg pavucontrol pulseeffects
+sudo pkcon install -y ffmpeg pavucontrol pulseeffects gnome-keyring
 flatpak install -y com.github.tchx84.Flatseal com.discordapp.Discord
 
 echo Log into accounts on web browser
