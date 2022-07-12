@@ -117,5 +117,8 @@ echo Dotfiles
 git clone https://github.com/tduck973564/dotfiles ~/.dotfiles
 echo ". ~/.dotfiles/.aliases" >> ~/.zshrc
 
+echo Add .local/bin to path
+echo "export PATH=$PATH:/home/$(whoami)/.local/bin"
+
 echo -e '\nDone!'
 
